@@ -248,6 +248,10 @@ ul {
     width: 60px;
 }
 
+.space-right {
+    margin-right: 30px;
+}
+
 .sidebyside {
     display:flex;
     justify-content: space-around;
