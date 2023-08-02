@@ -1,0 +1,355 @@
+/* 
+    light = DCCCA3
+    dark = 232020
+*/
+
+@font-face {
+    font-family: 'Patrick Hand';
+    src: url('fonts/PatrickHand-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('fonts/LibreBaskerville-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #232020;
+    margin: 0;
+    font-family: "Lato";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {    
+    list-style-type: none;
+    padding:0;
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    background-color: #DCCCA3;
+    width: min(85%, 1280px);
+    border-bottom: solid 8px #748e54;
+}
+
+.bannerimage {
+    width: 100%;
+}
+
+#content a {
+    background-color: #553739;
+    color: #DCCCA3;
+    padding: 0 5px 4px;
+    font-weight: 700;
+    border-radius: 3px;
+    margin: auto
+}
+
+#content a:hover {
+    background-color: #748e54;
+}
+
+#home-content .logo {
+    width: 200px;
+    height: 200px;
+    padding:20px;
+    margin:10px 40px -60px 0px;
+    border-radius: 250px;
+    background-color: #553739;
+    top:-80px;
+    position: relative;
+    border: solid 10px #DCCCA3;
+}
+
+#home-content {
+    display:flex;
+    margin: 0 30px 20px;
+    justify-content: center;
+}
+
+#navbar {
+    font-size: 18pt;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #553739;
+    width:100%;
+    margin: 20px 0 20px;    
+    font-family: "Libre Baskerville";
+}
+
+#navbar a {
+    color: #DCCCA3;
+    padding: 10px;
+    margin: 0 5px;
+    height:60px;
+    display:flex;
+    align-items: center;    
+    transition: background-color 0.2s;
+}
+
+
+#navbar .active-nav {
+    background-color: #955e42;
+}
+
+#navbar a:hover {
+    background-color: #748e54;
+    transition: background-color 0.2s;
+}
+
+
+#footer {    
+    width: min(85%, 1280px);
+    background-color: #553739;
+    color: #DCCCA3;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+#footer a {
+    color: #DCCCA3
+}
+
+#footer ul {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 18pt;
+    row-gap: 30px;
+    padding: 0;
+}
+
+#footer span {
+    top: 1px;
+    position: relative;
+    padding: 0 10px 0 0;
+}
+
+#footer ul a {
+    padding: 10px 15px 12px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #DCCCA3;
+    background-color: #232020;
+    width:20%;
+}
+
+#footer ul a:hover {
+    color: #232020;
+    background-color: #DCCCA3;
+}
+
+.location-block {
+    background-color: #232020;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.map {
+    border-radius: 0 30px 30px 0;
+}
+.location-block .map {    
+    width: max(200px, 50%) !important;
+    margin: 30px 20px;
+    margin-left: 0;
+}
+.location-block div {
+    line-height: 22pt;
+    width: 50%;
+    font-size: 16pt;
+    color: #DCCCA3;
+    padding: 20px;
+}
+.location-block div span {
+    color: #cb7f5a;
+}
+.customer-reviews {
+    background-color: #748e54;
+    padding: 5px 10px 20px;
+}
+.customer-reviews {
+    text-align: center;
+}
+.customer-reviews {
+    background-color: #DCCCA3;
+}
+.customer-reviews .menu {
+    margin-bottom: 0;
+    font-size: 16pt;
+}
+.customer-reviews .menu p {
+    margin-bottom: 0;
+    font-size: 16pt;
+}
+
+.menu {
+    font-family: "Patrick Hand";
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu p {
+    margin: 0;
+    color: #553739;
+}
+
+.menu-item img {
+    width: 100%;
+}
+
+.menu-item {    
+    font-size: 20pt;
+    text-align: center;
+    background: white;
+    padding: 10px 10px;
+    margin: 10px 20px;
+    width: 280px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.nav-logo {
+    width: 60px;
+}
+
+.sidebyside {
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 20px 40px;
+}
+
+.calendar li {
+    padding-bottom: 15px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.openingtimes td {
+    padding: 5px 10px;
+}
+
+form textarea {
+    height: 250px;
+}
+
+form input[type=text] {
+    width: 300px;
+    height: 20px;
+}
+
+form #submitbutton {
+    width: 130px;
+    height: 60px;
+    margin-top:20px;
+    align-self: flex-end;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+}
+
+form label {
+    padding: 12px;
+}
+
+form {
+    width: min(100%, 800px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 820px) {
+    .sidebyside {
+        flex-direction: column !important;
+    }
+
+    #navbar {
+        font-size: 12pt;
+        text-align: center;
+    }
+
+    .location-block div {
+        width: 90%;
+    }
+
+    .location-block .map {
+        border-radius: 10px;
+        margin: 20px 0;
+        width: min(100%, 500px) !important
+    }
+
+    .location-block {
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;        
+        align-items: center;
+        padding-bottom:40px;
+    }
+
+    #home-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #home-content .logo {
+        width: 200px;
+        height: 200px;
+        padding:20px;
+        margin:10px 0 -140px 0;
+        border-radius: 250px;
+        background-color: #553739;
+        top:-140px;
+        position: relative;
+        border: solid 10px #DCCCA3;
+    }
+
+    .menu-item {
+        padding: 10px 10px;
+        margin: 10px 10px;
+        width: 160px !important;
+    }
+}
