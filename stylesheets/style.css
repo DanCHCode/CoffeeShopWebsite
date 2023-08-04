@@ -305,13 +305,27 @@ form {
     flex-direction: column;
 }
 
+.vertical-divider {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.vertical-line {
+    width: 0px;
+    border: solid 2px #553739;
+    height: 100%;
+}
+
+.vertical-divider img {
+    margin:20px;
+    height: 40px;
+}
+
 @media screen and (max-width: 820px) {
     .sidebyside {
         flex-direction: column !important;
-    }
-
-    .space-right {
-        margin-right: 20px;
     }
 
     #navbar {
@@ -355,9 +369,23 @@ form {
         border: solid 10px #DCCCA3;
     }
 
+    .space-right {
+        margin-right: 20px;
+    }
+
     .menu-item {
         padding: 10px 10px;
         margin: 10px 10px;
         width: 160px !important;
+    }
+
+    .vertical-divider {
+        flex-direction: row;
+    }
+    
+    .vertical-line {
+        width: 100%;
+        border: solid 2px #553739;
+        height: 0px;
     }
 }
