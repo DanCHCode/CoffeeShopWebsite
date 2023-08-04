@@ -299,7 +299,7 @@ form label {
 }
 
 form {
-    width: min(100%, 800px);
+    width: min(90%, 800px);
     padding: 20px;
     display: flex;
     flex-direction: column;
